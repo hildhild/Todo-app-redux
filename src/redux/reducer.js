@@ -1,7 +1,8 @@
+//!Not used in redux toolkit
 import { combineReducers } from "redux";
 
-import filtersSlice from "../components/Filters/FiltersSlice";
-import todosSlice from "../components/TodoList/TodosSlice";
+import filtersReducer from "../components/Filters/FiltersSlice";
+import todoListReducer from "../components/TodoList/TodosSlice";
 
 
 // const rootReducer = ( state = {}, action ) => {
@@ -12,8 +13,8 @@ import todosSlice from "../components/TodoList/TodosSlice";
 // };
 
 const rootReducer = combineReducers({
-    filters: filtersSlice,
-    todoList: todosSlice
+    filters: filtersReducer,
+    todoList: todoListReducer
 });
 
 export default rootReducer;
